@@ -23,4 +23,4 @@ The website includes:
 ## 🛠️ Technologies Used
 
 - Front-end development technologies
-- Version control with Git and GitHub
+- Version control with Git and GitHub# portfolio
