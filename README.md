@@ -24,3 +24,7 @@ The website includes:
 
 - Front-end development technologies
 - Version control with Git and GitHub# portfolio
+
+## 🌟 Screenshot
+
+![Portfolio Screenshot](images/README screenshot.png)
