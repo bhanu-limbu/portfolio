@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhanu's Personal Portfolio</title>
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon"> <!-- Favicon -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Bhanu Limbu</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Bhanu Limbu's profile picture" class="avatar">
+                </div>
+                <div class="text-content">
+                    <h1>Hi, I'm Bhanu Limbu</h1>
+                    <p class="role">IT Student & Web Developer</p>
+                    <p class="intro">BCA graduate and Web Developer with experience building responsive, scalable, and user-focused web applications, emphasizing clean architecture, performance, and best practices.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn secondary">Contact Me</a>
+                        <a href="pdf/Resume.pdf" download class="btn primary">Download CV</a> <!-- CV Download Button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="bio">
+                    <p>Web Developer with a strong foundation in front-end and backend web technologies. I specialize in creating responsive websites, dynamic user interfaces, and scalable web applications. With an IT background, I focus on writing clean, maintainable code and continuously improving performance, accessibility, and user experience.</p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <!-- BCA Entry (Latest First) -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="education-card">
+                                    <div class="education-header">
+                                        <i class="fas fa-graduation-cap" aria-label="Graduation Cap"></i>
+                                        <h4>Bachelor of Computer Applications (BCA)</h4>
+                                        <span class="status ongoing">Final Year (Ongoing)</span>
+                                    </div>
+                                    <p class="institution"><strong>Morgan International College</strong></p>
+                                    <p class="duration">
+                                        <i class="fas fa-calendar-alt" aria-label="Calendar"></i>
+                                        2022 AD – Present
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- +2 Entry -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="education-card">
+                                    <div class="education-header">
+                                        <i class="fas fa-graduation-cap" aria-label="Graduation Cap"></i>
+                                        <h4>+2 Science (Grade 11–12)</h4>
+                                        <span class="status completed">Completed</span>
+                                    </div>
+                                    <p class="institution"><strong>Morgan International College</strong></p>
+                                    <p class="duration">
+                                        <i class="fas fa-calendar-alt" aria-label="Calendar"></i>
+                                        2020 AD – 2022 AD
+                                    </p>
+                                    <p class="subjects">
+                                        <i class="fas fa-book" aria-label="Book"></i>
+                                        Major Subjects: Computer Science, Mathematics
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-overview">
+                    <h3>Skills Overview</h3>
+                    <p>Proficient in modern web development technologies including HTML, CSS, JavaScript, and backend basics. Experienced in building responsive layouts, integrating APIs, managing databases, and using Git for version control and collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="HTML">
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <span>90%</span>
+                </div>
+                <div class="skill-card" data-skill="CSS">
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+                <div class="skill-card" data-skill="JavaScript">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <span>80%</span>
+                </div>
+                <div class="skill-card" data-skill="Java">
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <span>75%</span>
+                </div>
+                <div class="skill-card" data-skill="Python">
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <span>70%</span>
+                </div>
+                <div class="skill-card" data-skill="SQL">
+                    <h3>SQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/project1.png" alt="Portfolio Website Screenshot" class="project-image"> <!-- Project Photo -->
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+                    <!-- <div class="project-links">
+                        <a href="#" class="btn small">GitHub</a>
+                        <a href="#" class="btn small">Live Demo</a>
+                    </div> -->
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.webp" alt="ecommerce web image" class="project-image"> <!-- Project Photo -->
+                    <h3>E-Commerce Sales Database & Analytical Dashboard</h3>
+                    <p>A full-stack retail data website featuring a MySQL-backed store and an analytical dashboard for visualizing sales trends.</p>
+                    <p><strong>Technologies:</strong>MySQL (XAMPP), SQL, PHP, HTML/CSS.</p>
+                    <!-- <div class="project-links">
+                        <a href="#" class="btn small">GitHub</a>
+                        <a href="#" class="btn small">Live Demo</a>
+                    </div> -->
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.png" alt="Youtube subscription service Churn analysis" class="project-image"> <!-- Project Photo -->
+                    <h3>Dynamic Web Application (Subscription Platform)</h3>
+                    <p>A dynamic web-based platform focused on user interaction and data-driven features such as user activity tracking and dashboard visualization. Built with an emphasis on backend logic, data handling, and frontend integration.</p>
+                    <p><strong>Technologies:</strong>Python, JavaScript, HTML, CSS, Database Integration</p>
+                    <!-- <div class="project-links">
+                        <a href="#" class="btn small">GitHub</a>
+                        <a href="#" class="btn small">Live Demo</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just chatting about tech. Feel free to reach out!</p>
+                    <p><i class="fas fa-envelope"></i> mrbhanulimbu2@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bhanu-limbu-a384433a7/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/bhanu-limbu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/BhanuLimbu30758" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bhanu Limbu All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
