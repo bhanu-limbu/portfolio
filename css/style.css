@@ -20,7 +20,7 @@
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
     
-    /* Typography - Updated to Times New Roman */
+    /* Typography - Times New Roman */
     --font-display: 'Times New Roman', Times, serif;
     --font-body: 'Times New Roman', Times, serif;
     
@@ -439,6 +439,13 @@ button {
     transition: all var(--transition-base);
     position: relative;
     overflow: hidden;
+}
+
+/* Button with icon styles */
+.btn svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 
 .btn-primary {
@@ -946,23 +953,6 @@ section {
     color: var(--text-secondary);
 }
 
-/* Download Button */
-.resume-download {
-    text-align: center;
-    padding-top: var(--space-xl);
-}
-
-.resume-download .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-sm);
-}
-
-.resume-download .btn svg {
-    width: 20px;
-    height: 20px;
-}
-
 /* ==========================================
    CONTACT SECTION
    ========================================== */
@@ -1185,6 +1175,7 @@ section {
     .hero-buttons .btn {
         width: 100%;
         text-align: center;
+        justify-content: center;
     }
     
     .about-stats {
