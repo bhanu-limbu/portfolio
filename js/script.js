@@ -121,3 +121,32 @@ contactForm.addEventListener('submit', (e) => {
         contactForm.reset();
     }
 });
+
+// ===============================
+// AJAX Contact Form Submission
+// (Added separately – does not modify existing JS)
+// ===============================
+
+$("#contact-form").on("submit", function(e) {
+    e.preventDefault(); // Prevents the page from refreshing
+    
+    // Disable the button so the user doesn't click twice
+    $(".btn").attr("disabled", true).text("Sending...");
+
+    var scriptURL = "YOUR_URL_HERE"; 
+    
+    $.ajax({
+        url: scriptURL,
+        method: "POST",
+        data: $(this).serialize(), // Automatically grabs name, email, and message
+        success: function(response) {
+            alert("Message received! I'll get back to you soon.");
+            $("#contact-form")[0].reset(); // Clear the form
+            $(".btn").attr("disabled", false).text("Send Message");
+        },
+        error: function() {
+            alert("Something went wrong. Please try again.");
+            $(".btn").attr("disabled", false).text("Send Message");
+        }
+    });
+});
