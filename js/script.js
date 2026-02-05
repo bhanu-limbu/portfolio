@@ -122,31 +122,32 @@ contactForm.addEventListener('submit', (e) => {
     }
 });
 
-// ===============================
-// AJAX Contact Form Submission
-// (Added separately – does not modify existing JS)
-// ===============================
-
-$("#contact-form").on("submit", function(e) {
-    e.preventDefault(); // Prevents the page from refreshing
+// Inside your existing script.js
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault(); 
     
-    // Disable the button so the user doesn't click twice
-    $(".btn").attr("disabled", true).text("Sending...");
+    // ... (Your validation code for name, email, and message goes here) ...
 
-    var scriptURL = "https://script.google.com/macros/s/AKfycbxrp-5JxHtVhURltY6hkJkUCELalF8AcMqZEMBJ3cBXZPczmYm4qi_IPPociDBKqB6ADQ/exec"; 
-    
-    $.ajax({
-        url: scriptURL,
-        method: "POST",
-        data: $(this).serialize(), // Automatically grabs name, email, and message
-        success: function(response) {
-            alert("Message received! I'll get back to you soon.");
-            $("#contact-form")[0].reset(); // Clear the form
-            $(".btn").attr("disabled", false).text("Send Message");
-        },
-        error: function() {
-            alert("Something went wrong. Please try again.");
-            $(".btn").attr("disabled", false).text("Send Message");
-        }
-    });
+    if (!isValid) {
+        // ... (Show error messages) ...
+    } else {
+        // THIS IS THE MANDATORY AJAX PART
+        const $btn = $(contactForm).find(".btn");
+        $btn.prop("disabled", true).text("Sending...");
+
+        $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbxrp-5JxHtVhURltY6hkJkUCELalF8AcMqZEMBJ3cBXZPczmYm4qi_IPPociDBKqB6ADQ/exec",
+            method: "POST",
+            data: $(contactForm).serialize(),
+            success: function(response) {
+                alert("Message received! Check your Excel sheet.");
+                contactForm.reset();
+                $btn.prop("disabled", false).text("Send Message");
+            },
+            error: function() {
+                alert("Error sending message.");
+                $btn.prop("disabled", false).text("Send Message");
+            }
+        });
+    }
 });
