@@ -3,251 +3,616 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Bhanu Limbu, a web developer specializing in html, css and javascripr.">
-    <title>Bhanu Limbu | Web Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing projects, skills, and experience">
+     <meta name="description" content="Portfolio of Bhanu Limbu, a web developer specializing in html, css and javascripr.">
+    <title>Bhanu Limbu | Web Developer Portfoli</title>
     <link rel="icon" href="images/favicon.svg" type="image/x-icon"> <!-- Favicon -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
 </head>
 <body>
-    <!-- Header with Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Bhanu Limbu</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-initial">Bhanu Limbu</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-                <i class="fas fa-moon"></i>
-            </button>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <div class="container">
-            <div class="home-content">
-                <div class="profile-image">
-                    <img src="images/profile.jpg" alt="Bhanu Limbu's profile picture" class="avatar">
-                </div>
-                <div class="text-content">
-                    <h1>Hi, I'm Bhanu Limbu</h1>
-                    <p class="role">IT Student & Web Developer</p>
-                    <p class="intro">BCA graduate and Web Developer with experience building responsive, scalable, and user-focused web applications, emphasizing clean architecture, performance, and best practices.</p>
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn primary">View Projects</a>
-                        <a href="#contact" class="btn secondary">Contact Me</a>
-                        <a href="pdf/Resume.pdf" download class="btn primary">Download CV</a> <!-- CV Download Button -->
-                    </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Available for opportunities</div>
+                <h1 class="hero-title">
+                    <span class="title-line">Bhanu Limbu</span>
+                    <span class="title-line title-accent">Web Developer</span>
+                </h1>
+                <p class="hero-description">
+                    Engineering seamless web apps that merge robust logic with clean code. Focused on speed, user experience, and builds that prove professional expertise!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
+            <div class="hero-decoration">
+                <div class="decoration-circle circle-1"></div>
+                <div class="decoration-circle circle-2"></div>
+                <div class="decoration-circle circle-3"></div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section class="about" id="about">
         <div class="container">
-            <h2>About Me</h2>
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
             <div class="about-content">
-                <div class="bio">
-                    <p>Web Developer with a strong foundation in front-end and backend web technologies. I specialize in creating responsive websites, dynamic user interfaces, and scalable web applications. With an IT background, I focus on writing clean, maintainable code and continuously improving performance, accessibility, and user experience.</p>
-                </div>
-                <div class="education">
-                    <h3>Education</h3>
-                    <div class="timeline">
-                        <!-- BCA Entry (Latest First) -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <div class="education-card">
-                                    <div class="education-header">
-                                        <i class="fas fa-graduation-cap" aria-label="Graduation Cap"></i>
-                                        <h4>Bachelor of Computer Applications (BCA)</h4>
-                                        <span class="status ongoing">Final Year (Ongoing)</span>
-                                    </div>
-                                    <p class="institution"><strong>Morgan International College</strong></p>
-                                    <p class="duration">
-                                        <i class="fas fa-calendar-alt" aria-label="Calendar"></i>
-                                        2022 AD – Present
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- +2 Entry -->
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <div class="education-card">
-                                    <div class="education-header">
-                                        <i class="fas fa-graduation-cap" aria-label="Graduation Cap"></i>
-                                        <h4>+2 Science (Grade 11–12)</h4>
-                                        <span class="status completed">Completed</span>
-                                    </div>
-                                    <p class="institution"><strong>Morgan International College</strong></p>
-                                    <p class="duration">
-                                        <i class="fas fa-calendar-alt" aria-label="Calendar"></i>
-                                        2020 AD – 2022 AD
-                                    </p>
-                                    <p class="subjects">
-                                        <i class="fas fa-book" aria-label="Book"></i>
-                                        Major Subjects: Computer Science, Mathematics
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+                        <div class="image-border"></div>
                     </div>
                 </div>
-                <div class="skills-overview">
-                    <h3>Skills Overview</h3>
-                    <p>Proficient in modern web development technologies including HTML, CSS, JavaScript, and backend basics. Experienced in building responsive layouts, integrating APIs, managing databases, and using Git for version control and collaboration.</p>
+                
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hello! I'm a passionate developer who loves turning complex problems into simple, 
+                        beautiful, and intuitive solutions. My journey in web development started several years ago, 
+                        and I've been fortunate to work on diverse projects that have sharpened my skills.
+                    </p>
+                    <p>
+                        I believe that great design and clean code go hand in hand. Every project I work on is an 
+                        opportunity to create something meaningful—whether it's a sleek user interface, a robust 
+                        backend system, or a complete full-stack application.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+                        projects, or sharing knowledge with the developer community. I'm always eager to collaborate 
+                        on exciting projects and learn from talented people.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <!-- <div class="stat-item">
+                            <span class="stat-number">~80%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section class="skills" id="skills">
         <div class="container">
-            <h2>Skills</h2>
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+            </div>
+            
             <div class="skills-grid">
-                <div class="skill-card" data-skill="HTML">
-                    <h3>HTML</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
                     </div>
-                    <span>90%</span>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <!-- <span class="tag">React</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">TypeScript</span> -->
+                    </div>
                 </div>
-                <div class="skill-card" data-skill="CSS">
-                    <h3>CSS</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%;"></div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
                     </div>
-                    <span>85%</span>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">Python</span>
+                        <!-- <span class="tag">Django</span> -->
+                        <span class="tag">MongoDB</span>
+                        <!-- <span class="tag">PostgreSQL</span> -->
+                    </div>
                 </div>
-                <div class="skill-card" data-skill="JavaScript">
-                    <h3>JavaScript</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%;"></div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
                     </div>
-                    <span>80%</span>
+                    <h3 class="skill-title">Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">AWS</span>
+                        <!-- <span class="tag">Figma</span> -->
+                        <span class="tag">VS Code</span>
+                        <!-- <span class="tag">Linux</span> -->
+                    </div>
                 </div>
-                <div class="skill-card" data-skill="Java">
-                    <h3>Java</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 75%;"></div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
                     </div>
-                    <span>75%</span>
-                </div>
-                <div class="skill-card" data-skill="Python">
-                    <h3>Python</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 70%;"></div>
+                    <h3 class="skill-title">Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Team Work</span>
+                        <span class="tag">Communication</span>
+                        <span class="tag">Agile</span>
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Mentoring</span>
                     </div>
-                    <span>70%</span>
-                </div>
-                <div class="skill-card" data-skill="SQL">
-                    <h3>SQL</h3>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%;"></div>
-                    </div>
-                    <span>85%</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section class="projects" id="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
             <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/project1.png" alt="Roadside assistance project Screenshot" class="project-image"> <!-- Project Photo -->
-                    <h3>Roadside assistance</h3>
-                    <p>A full-stack web platform that connects vehicle owners with nearby mechanics in real time for emergency roadside services. Users can request help, track service status, and chat with mechanics, while mechanics and admins manage requests through dedicated dashboards.</p>
-                    <p><strong>Technologies:</strong> Frontend: HTML, CSS, JavaScript, Backend: PHP, Database: MySQL, Server: Apache (XAMPP)</p>
-                    <!-- <div class="project-links">
-                        <a href="#" class="btn small">GitHub</a>
-                        <a href="#" class="btn small">Live Demo</a>
-                    </div> -->
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.png" alt="Roadside assistance" class="profile-img">
+                        <!-- <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Roadside assistance</h3>
+                        <p class="project-description">
+                            A full-stack web platform that connects vehicle owners with nearby mechanics in real time for emergency roadside services. Users can request help, track service status, and chat with mechanics, while mechanics and admins manage requests through dedicated dashboards.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL(XAMPP)</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.png" alt="Blood bank mgmt system" class="profile-img">
+                        <!-- <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blood Bank Management & Donor Patient Web Portal</h3>
+                        <p class="project-description">
+                            A full-stack blood bank website featuring a MySQL-backed database and a management dashboard for handling donor and patient requests.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.png" alt="Community fund mgmt" class="profile-img">
+                        <!-- <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dynamic Web Application (Community Fund Transfer Platform)</h3>
+                        <p class="project-description">
+                            A dynamic web-based platform focused on secure fund transfers and user management, featuring profile tracking, transaction monitoring, and admin dashboards. Built with an emphasis on backend logic, data handling, and frontend integration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <!-- <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Task Management Tool</div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management Tool</h3>
+                        <p class="project-description">
+                            Collaborative project management application with kanban boards, 
+                            time tracking, and team collaboration features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </article> -->
+
+                <!-- Project 5 -->
+                <!-- <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Portfolio Generator</div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Generator</h3>
+                        <p class="project-description">
+                            AI-powered portfolio website builder with customizable templates, 
+                            drag-and-drop editor, and one-click deployment.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">OpenAI</span>
+                        </div>
+                    </div>
+                </article> -->
+
+                <!-- Project 6 -->
+                <!-- <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Weather Forecast App</div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Forecast App</h3>
+                        <p class="project-description">
+                            Beautiful weather application with accurate forecasts, 
+                            interactive maps, and personalized weather alerts.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                    </div>
+                </article> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Resume</h2>
+            </div>
+            
+            <div class="resume-content">
+                <!-- Professional Summary -->
+                <div class="resume-block">
+                    <h3 class="resume-block-title">Professional Summary</h3>
+                    <p class="resume-text">
+                        Results-driven developer with 2+ years of experience building scalable web applications 
+                        and user-centric interfaces. Proficient in modern frontend and backend technologies with 
+                        a strong focus on clean code, performance optimization, and collaborative problem-solving. 
+                        Passionate about creating elegant solutions that deliver exceptional user experiences and 
+                        drive business value.
+                    </p>
                 </div>
-                <div class="project-card">
-                    <img src="images/project2.png" alt="Blood bank mgmt system" class="project-image"> <!-- Project Photo -->
-                    <h3>Blood Bank Management & Donor Patient Web Portal</h3>
-                    <p>A full-stack blood bank website featuring a MySQL-backed database and a management dashboard for handling donor and patient requests.</p>
-                    <p><strong>Technologies:</strong>MySQL (XAMPP), SQL, PHP, HTML/CSS.</p>
-                    <!-- <div class="project-links">
-                        <a href="#" class="btn small">GitHub</a>
-                        <a href="#" class="btn small">Live Demo</a>
-                    </div> -->
+
+                <!-- Education -->
+                <div class="resume-block">
+                    <h3 class="resume-block-title">Education</h3>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <h4 class="resume-item-title">Bachelor in Computer Application</h4>
+                            <span class="resume-item-date">2022 - Present</span>
+                        </div>
+                        <p class="resume-item-subtitle">Morgan International College, Kathmandu</p>
+                        <p class="resume-item-description">
+                            Relevant coursework: Data Structures, Algorithms, 
+                            Web Development, Database Systems, Software Engineering, Machine Learning.
+                        </p>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <h4 class="resume-item-title">+2 in Science</h4>
+                            <span class="resume-item-date">2020 - 2022</span>
+                        </div>
+                        <p class="resume-item-subtitle">Morgan International College, Kathmandu</p>
+                        <p class="resume-item-description">
+                            Focus on Science and Mathematics. Member of the coding club and robotics team.
+                        </p>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/project3.png" alt="Youtube subscription service Churn analysis" class="project-image"> <!-- Project Photo -->
-                    <h3>Dynamic Web Application (Community Fund Transfer Platform)</h3>
-                    <p>A dynamic web-based platform focused on secure fund transfers and user management, featuring profile tracking, transaction monitoring, and admin dashboards. Built with an emphasis on backend logic, data handling, and frontend integration.</p>
-                    <p><strong>Technologies:</strong>Python, JavaScript, HTML, CSS, Database Integration</p>
-                    <!-- <div class="project-links">
-                        <a href="#" class="btn small">GitHub</a>
-                        <a href="#" class="btn small">Live Demo</a>
-                    </div> -->
+
+                <!-- Skills Overview -->
+                <div class="resume-block">
+                    <h3 class="resume-block-title">Skills Overview</h3>
+                    <div class="resume-skills-grid">
+                        <div class="resume-skill-category">
+                            <h4 class="resume-skill-category-title">Frontend</h4>
+                            <p class="resume-skill-list">HTML5, CSS3, JavaScript, React, Vue.js, TypeScript, Responsive Design, Tailwind CSS</p>
+                        </div>
+                        
+                        <div class="resume-skill-category">
+                            <h4 class="resume-skill-category-title">Backend</h4>
+                            <p class="resume-skill-list">PHP, XAMPP, Python, RESTful APIs, GraphQL</p>
+                        </div>
+                        
+                        <div class="resume-skill-category">
+                            <h4 class="resume-skill-category-title">Database</h4>
+                            <p class="resume-skill-list">MongoDB, PostgreSQL, MySQL</p>
+                        </div>
+                        
+                        <div class="resume-skill-category">
+                            <h4 class="resume-skill-category-title">Tools & Other</h4>
+                            <p class="resume-skill-list">Git/ GitHub, Docker, AWS, CI/CD, Agile, Testing (Jest, Pytest), Figma</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download Button -->
+                <div class="resume-download">
+                    <a href="docs/Resume.pdf" class="btn btn-primary" download="Bhanu_Resume.pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Resume (PDF)
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new opportunities, collaborations, or just chatting about tech. Feel free to reach out!</p>
-                    <p><i class="fas fa-envelope"></i> mrbhanulimbu2@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/bhanu-limbu-a384433a7/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/bhanu-limbu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/BhanuLimbu30758" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <h3 class="contact-subtitle">Let's work together</h3>
+                    <p class="contact-text">
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you have a question or just want to say hello, feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>mrbhanulimbu2@gmail.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Kathmandu, Nepal</span>
+                        </div>
                     </div>
                 </div>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Bhanu Limbu All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/bhanu-limbu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bhanu-limbu-a384433a7/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/BhanuLimbu30758" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <p class="footer-copyright">
+                    &copy; 2026 Bhanu Limbu. All rights reserved.
+                </p>
+            </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script src="js/script.js"></script>
 </body>
 </html>

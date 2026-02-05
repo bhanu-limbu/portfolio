@@ -27,4 +27,4 @@ The website includes:
 
 ## 🌟 Screenshot
 
-![Portfolio Screenshot](images/README-screenshot.png)
+![Portfolio Screenshot](images/portfolioScreenshot.png)
