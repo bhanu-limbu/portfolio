@@ -133,7 +133,7 @@ $("#contact-form").on("submit", function(e) {
     // Disable the button so the user doesn't click twice
     $(".btn").attr("disabled", true).text("Sending...");
 
-    var scriptURL = "YOUR_URL_HERE"; 
+    var scriptURL = "https://script.google.com/macros/s/AKfycbxrp-5JxHtVhURltY6hkJkUCELalF8AcMqZEMBJ3cBXZPczmYm4qi_IPPociDBKqB6ADQ/exec"; 
     
     $.ajax({
         url: scriptURL,
